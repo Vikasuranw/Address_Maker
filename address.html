@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(images/card.jpg);
+            background-size: 100% 1050px;
+            background-repeat: no-repeat;
+        }
+
+        #page {
+            width: 100%;
+            height: 1050px;
+            background-color: rgb(0, 0, 0, 0.3);
+        }
+
+        h1[align=center] {
+
+            font-size: 50px;
+            font-family: calibri;
+            color: whitesmoke;
+        }
+
+        p[align=center] {
+
+            font-size: 16px;
+            font-family: calibri;
+            color: whitesmoke;
+            padding: 10px;
+        }
+
+        #left {
+            margin: 100px;
+            width: 450px;
+            height: 700px;
+            float: left;
+        }
+
+        h2 {
+            font-size: 35px;
+            color: azure;
+            text-align: center;
+
+        }
+
+        #formvalue {
+            color: antiquewhite;
+            font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            margin-top: 60px;
+        }
+
+        #one,
+        #two,
+        #three,
+        #four,
+        #five {
+            background-color: rgb(0, 0, 0, 0.3);
+            width: 450px;
+            height: 30px;
+            border: 2px solid white;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+            color: white;
+            font-family: century gothic;
+        }
+
+        #dat {
+            background-color: rgb(0, 0, 0, 0.4);
+            width: 450px;
+            border: 2px solid white;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.4);
+            color: white;
+            font-family: century gothic;
+
+        }
+
+        #make {
+            background-color: rgb(0, 0, 0, 0.5);
+            padding: 15px;
+            width: 100px;
+            margin-left: 350px;
+            margin-top: 50px;
+            border: 2px solid white;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+            color: white;
+            font-family: century gothic;
+            float: left;
+        }
+
+        #right {
+            float: left;
+            width: 452px;
+            height: 303px;
+            border: 2px solid white;
+            margin: 100px;
+        }
+
+        #load {
+            padding-top: 10px;
+            padding-left: 70px;
+            padding-right: 50px;
+            float: left;
+            width: 450px;
+            height: 250px;
+            border: 2px solid white;
+            background-image: url(images/page_bg2.jpg);
+            background-size: 100% 100%;
+        }
+
+        #btn {
+            width: 100px;
+            height: 30px;
+            background-color: white;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+            padding-top: 6px;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        #firstno,
+        #lastno {
+            margin-left: 230px;
+            color:aqua;
+            font-family: Comic Sans MS;
+            font-size: 13px;
+        }
+
+        #namee {
+            margin-top: 20px;
+            font-size: 21px;
+            font-family: Comic Sans MS;
+            color: yellow;
+            margin-bottom: 10px;
+
+        }
+
+        #emailid{
+            font-family: century gothic;
+            color: red;
+            line-height: 25px;
+            font-size: 15px;
+        }
+        #father{
+            font-family: century gothic;
+            color: aqua;
+            line-height: 25px;
+            font-size: 15px;
+        }
+        #address {
+            font-family: century gothic;
+            color:orangered;
+            line-height: 25px;
+            font-size: 15px;
+        }
+    </Style>
+    <script>
+        function get() {
+            var a = document.getElementById("one").value;
+            var b = document.getElementById("two").value;
+            var c = document.getElementById("three").value;
+            var d = document.getElementById("four").value;
+            var e = document.getElementById("five").value;
+            var f = document.getElementById("dat").value;
+
+            var g = document.getElementById("firstno");
+            g.innerHTML = b;
+
+            var h = document.getElementById("namee");
+            h.innerHTML = a;
+
+            var i = document.getElementById("lastno");
+            i.innerHTML = c;
+
+            var j = document.getElementById("father");
+            j.innerHTML = d;
+
+            var k = document.getElementById("emailid");
+            k.innerHTML = e;
+
+            var l = document.getElementById("address");
+            l.innerHTML = f;
+        }
+
+        function bold() {
+            var a = document.getElementById("father");
+            a.style.fontWeight = "bold";
+
+            var b = document.getElementById("emailid");
+            b.style.fontWeight = "bold";
+
+            var f = document.getElementById("address");
+            f.style.fontWeight = "bold";
+        }
+
+        function italic() {
+            var a = document.getElementById("father");
+            a.style.fontStyle = "italic";
+
+            var b = document.getElementById("emailid");
+            b.style.fontStyle = "italic";
+
+            var f = document.getElementById("address");
+            f.style.fontStyle = "italic";
+        }
+
+        function prin() {
+            document.print();
+        }
+
+        function undo() {
+            var a = document.getElementById("father");
+            a.style.fontStyle = "normal";
+
+            var b = document.getElementById("emailid");
+            b.style.fontStyle = "normal";
+
+            var f = document.getElementById("address");
+            f.style.fontStyle = "normal";
+
+            var a = document.getElementById("father");
+            a.style.fontWeight = "normal";
+
+            var b = document.getElementById("emailid");
+            b.style.fontWeight = "normal";
+
+            var f = document.getElementById("address");
+            f.style.fontWeight = "normal";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="page">
+        <h1 align="center">Address Maker</h1>
+        <p align="center">An Online Address Create Tool</p>
+        <hr>
+
+        <div id="left">
+            <h2> Your Information Here</h2>
+            <form id="formvalue">
+                <label for="Name">Name:</label>
+                <br>
+                <input type="name" name="name" id="one">
+                <br><br>
+                <label for="Mobile No.">Mobile No.:</label>
+                <br>
+                <input type="tel" name="Mobile No." id="two">
+                <br><br>
+                <label for=" Alternate Mobile No.">Alternate Mobile No.:</label>
+                <br>
+                <input type="tel" name=" Alternate Mobile No." id="three">
+                <br><br>
+                <label for="S/O,W/O,D/O">S/O,W/O,D/O:</label>
+                <br>
+                <input type="text" name="S/O,W/O,D/O" id="four">
+                <br><br>
+                <label for="Email ">Email:</label>
+                <br>
+                <input type="email" name="email" id="five">
+
+                <br><br>
+                <label for="Address">Address:</label>
+                <br>
+                <textarea rows="8" id="dat"></textarea>
+            </form>
+            <input type="submit" id="make" value="MAKE" onclick="get()">
+        </div>
+
+        <div id="right">
+            <div id="load">
+
+                <p id="firstno"></p>
+                <p id="lastno"></p>
+                <p id="namee"></p>
+                <p id="emailid"></p>
+                <p id="father"></p>
+                <p id="address"></p>
+            </div>
+            <div id="btn" onclick="print()">Print</div>
+            <div id="btn" onclick="bold()">Bold</div>
+            <div id="btn" onclick="italic()">Italic</div>
+            <div id="btn" onclick="undo()">Undo</div>
+
+        </div>
+    </div>
+</body>
+
+</html>
